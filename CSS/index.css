@@ -1,0 +1,28 @@
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------- First section ---------------------- */
+
+.section-one{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    color: white;
+    font-family: "D-DIN-Bold";
+    font-size: 100px;
+}
+
+
