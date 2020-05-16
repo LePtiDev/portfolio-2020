@@ -6,10 +6,15 @@
     box-sizing: border-box;
     color: white;
     font-family: D-DIN;
+    overflow-x: hidden;
 }
 
 .bold{
     font-family: D-DIN-Bold;
+}
+
+h2{
+    font-size: 25px;
 }
 
 /* ----------------------  Nav bar ----------------------  */
@@ -70,7 +75,7 @@ h1{
 /* ---------------------- Seconde section ---------------------- */
 
 .section-tow{
-    height: 150vh;
+    height: 100vh;
     whidth: 100vw;
     background-color: black;
     position: relative;
@@ -84,7 +89,7 @@ h1{
     left: 20%;
     top: 50%;
     z-index: 1;
-    transition-duration: 100ms;
+    transition-duration: 50ms;
 }
 
 .presentation-text{
@@ -96,6 +101,41 @@ h1{
     z-index: 2;
 }
 
+/* ---------------------- third section ---------------------- */
+
+.section-three{
+    height: 100vh;
+    whidth: 100vw;
+    background-color: black;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+svg{
+    width: 100vw;
+    height: 100vh;
+    border: solid 1px red;
+}
+
+.line-project{
+    margin: 20px 0 0 0;
+    height: 100%;
+    width: 2px;
+    background-color: white;
+}
 
 
+/* ---------------------- four section ---------------------- */
 
+.section-four{
+    height: 100vh;
+    whidth: 100vw;
+    background-color: black;
+    position: relative;
+    z-index: 0;
+}
