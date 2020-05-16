@@ -134,28 +134,37 @@ svg{
     left: 50%;
 }
 
-.project{
-    height: 400px;
-    width: 50vw;
-    background-color: gray;
+/* container of number and information on the project */
+.container-project{
+    position: relative;
+    height: 500px;
+    width: 55vw;
     margin-top: 200px;
     z-index: 2;
-    overflow: hidden;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* project guidlines */
+.project{
+    height: 400px;
+    width: 50vw;
+    background-color: gray;
+    overflow: hidden;
+    position: relative;
+}
+
 .left{
     margin-left: 30%;
-    box-shadow: 7px 7px 10px 2px rgba(255,255,255,0.12);
 }
 
 .right{
     margin-right: 30%;
-    box-shadow: -7px 7px 10px 2px rgba(255,255,255,0.12);
 }
+
+
+/* image of the project */
 
 .image-project {
     width: 100%;
@@ -163,17 +172,54 @@ svg{
     z-index: 0;
 }
 
+/* over project */
+
+.overlay-project{
+    width: 0%;
+    height: 100%;
+    background-color: #212121;
+    filter: opacity(0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition-duration: 500ms;
+    padding: 0px;
+}
+
+.name-project{
+
+}
+
+.description-project{
+
+}
+
+.know-more{
+
+}
+
+/* number of the project */
+
 .number-project-left{
     position: absolute;
     font-size: 150px;
-    top: -50px;
-    z-index: 10;
+    top: -20px;
+    left: 0px;
+    z-index: 100;
+    text-shadow: 2px 2px 8px black;
 }
 
 .number-project-right{
     position: absolute;
     font-size: 150px;
+    top: -20px;
+    right: 0px;
+    z-index: 10;
+    text-shadow: 2px 2px 8px black;
 }
+
+
 
 /* ---------------------- four section ---------------------- */
 

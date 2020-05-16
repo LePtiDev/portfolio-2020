@@ -1,7 +1,8 @@
 
-
 // variables
 var image = document.getElementById('presentation-picture');
+var project = document.getElementById("project");
+var overlay = document.getElementById('overlay-project');
 
 // scroll
 window.onscroll = function(){
@@ -16,3 +17,16 @@ window.onscroll = function(){
         image.style.transitionDuration = "1000ms";
     }
 };
+
+// hover
+project.addEventListener('mouseenter', function(){
+    console.log("hover");
+    overlay.style.width = "100%";
+    overlay.style.padding = "25px";
+});
+
+project.addEventListener('mouseleave', function(){
+    console.log("hover");
+    overlay.style.width = "0%";
+    overlay.style.padding = "0px"
+});
