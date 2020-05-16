@@ -14,7 +14,7 @@
 }
 
 h2{
-    font-size: 25px;
+    font-size: 30px;
 }
 
 /* ----------------------  Nav bar ----------------------  */
@@ -101,10 +101,11 @@ h1{
     z-index: 2;
 }
 
-/* ---------------------- third section ---------------------- */
+/* ---------------------- project section ---------------------- */
 
 .section-three{
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     whidth: 100vw;
     background-color: black;
     position: relative;
@@ -114,6 +115,7 @@ h1{
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    padding: 0 0 150px 0;
 }
 
 svg{
@@ -123,12 +125,55 @@ svg{
 }
 
 .line-project{
-    margin: 20px 0 0 0;
-    height: 100%;
+    height: 120%;
     width: 2px;
     background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 50%;
 }
 
+.project{
+    height: 400px;
+    width: 50vw;
+    background-color: gray;
+    margin-top: 200px;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    margin-left: 30%;
+    box-shadow: 7px 7px 10px 2px rgba(255,255,255,0.12);
+}
+
+.right{
+    margin-right: 30%;
+    box-shadow: -7px 7px 10px 2px rgba(255,255,255,0.12);
+}
+
+.image-project {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.number-project-left{
+    position: absolute;
+    font-size: 150px;
+    top: -50px;
+    z-index: 10;
+}
+
+.number-project-right{
+    position: absolute;
+    font-size: 150px;
+}
 
 /* ---------------------- four section ---------------------- */
 
