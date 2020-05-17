@@ -22,7 +22,7 @@ window.onscroll = function(){
 project.addEventListener('mouseenter', function(){
     console.log("hover");
     overlay.style.width = "100%";
-    overlay.style.padding = "25px";
+    overlay.style.padding = "70px";
 });
 
 project.addEventListener('mouseleave', function(){
