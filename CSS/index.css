@@ -157,10 +157,12 @@ svg{
 
 .left{
     margin-left: 30%;
+    transition-duration: 500ms;
 }
 
 .right{
     margin-right: 30%;
+    transition-duration: 500ms;
 }
 
 
@@ -187,15 +189,32 @@ svg{
 }
 
 .name-project{
-
+    font-size: 60px;
+    margin-bottom: 6%;
+    opacity: 0;
+    transition-delay: 300ms;
+    transition-duration: 500ms;
 }
 
 .description-project{
+    font-size: 20px;
+    margin-bottom: 6%;
+    opacity: 0;
+    transition-delay: 600ms;
+    transition-duration: 500ms;
 
 }
 
 .know-more{
-
+    opacity: 0;
+    transition-delay: 800ms;
+    transition-duration: 500ms;
+    margin: 40px 0px 0px 0px;
+    padding: 20px;
+    background-color: red;
+    position: absolute;
+    right: 70px;
+    bottom: 70px;
 }
 
 /* number of the project */
@@ -207,6 +226,7 @@ svg{
     left: 0px;
     z-index: 100;
     text-shadow: 2px 2px 8px black;
+    transition-duration: 500ms;
 }
 
 .number-project-right{
@@ -216,6 +236,7 @@ svg{
     right: 0px;
     z-index: 10;
     text-shadow: 2px 2px 8px black;
+    transition-duration: 500ms;
 }
 
 
