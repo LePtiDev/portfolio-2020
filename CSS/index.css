@@ -17,6 +17,22 @@ h2{
     font-size: 30px;
 }
 
+.htmlElement{
+    color: #eb2f06;
+}
+
+.class{
+    color: #fa983a;
+}
+
+.textclass{
+    color: #38ada9;
+}
+
+.in{
+    margin-left: 40px;
+}
+
 /* ----------------------  Nav bar ----------------------  */
 
 nav{
@@ -37,7 +53,7 @@ nav{
 .section-one{
     height: 100vh;
     width: 100vw;
-    background-color: black;
+    background-color: #1a1527;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,69 +61,37 @@ nav{
     z-index: 0;
 }
 
-.logo{
-    font-family: D-DIN;
+.logo-top{
     font-size: 30px;
     color: white;
-}
-
-.button-menu{
-    font-family: D-DIN;
 }
 
 /* Title */
 
 h1{
-    color: white;
+    color: #eb2f06;
     font-family: "D-DIN-Bold";
     font-size: 100px;
+    /* margin-top: 40vh; */
 }
 
 /* Side bar on the top */
 
 .sidebar {
-    height: 30vh;
-    width: 0px;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-}
-
-/* ---------------------- Seconde section ---------------------- */
-
-.section-tow{
-    height: 100vh;
-    whidth: 100vw;
-    background-color: black;
-    position: relative;
-    z-index: 0;
-}
-
-.presentation-picture{
-    width: 30vw;
-    height: auto;
-    position: absolute;
-    left: 20%;
-    top: 50%;
-    z-index: 1;
-    transition-duration: 50ms;
-}
-
-.presentation-text{
-    position: absolute;
-    left: 45%;
-    top: 5%;
-    width: 40vw;
-    font-size: 22px;
-    z-index: 2;
+    height: 0vh;
+    border-left: 2px solid #3c6382;
+    transition-duration: 800ms;
+    transition-delay: 500ms;
+    font-size: 30px;
 }
 
 /* ---------------------- project section ---------------------- */
 
-.section-three{
+.section-two{
     height: auto;
     min-height: 100vh;
     whidth: 100vw;
-    background-color: black;
+    background-image: linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
     position: relative;
     z-index: 0;
     display: flex;
@@ -118,16 +102,9 @@ h1{
     padding: 0 0 150px 0;
 }
 
-svg{
-    width: 100vw;
-    height: 100vh;
-    border: solid 1px red;
-}
-
 .line-project{
     height: 120%;
-    width: 2px;
-    background-color: white;
+    border-left: 2px solid #5918df;
     position: absolute;
     z-index: 1;
     top: 50px;
@@ -139,7 +116,7 @@ svg{
     position: relative;
     height: 500px;
     width: 55vw;
-    margin-top: 200px;
+    margin-top: 130px;
     z-index: 2;
     display: flex;
     justify-content: center;
@@ -148,11 +125,12 @@ svg{
 
 /* project guidlines */
 .project{
-    height: 400px;
+    height: 450px;
     width: 50vw;
     background-color: gray;
     overflow: hidden;
     position: relative;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,.45);
 }
 
 .left{
@@ -211,7 +189,7 @@ svg{
     transition-duration: 500ms;
     margin: 40px 0px 0px 0px;
     padding: 20px;
-    background-color: red;
+    background: linear-gradient(90deg, #fa983a 20%, #eb2f06);
     position: absolute;
     right: 70px;
     bottom: 70px;
@@ -225,8 +203,9 @@ svg{
     top: -20px;
     left: 0px;
     z-index: 100;
-    text-shadow: 2px 2px 8px black;
+    text-shadow: 9px 9px 0px #0a3d62;
     transition-duration: 500ms;
+    color: #eb2f06;
 }
 
 .number-project-right{
@@ -234,19 +213,160 @@ svg{
     font-size: 150px;
     top: -20px;
     right: 0px;
-    z-index: 10;
-    text-shadow: 2px 2px 8px black;
+    z-index: 100;
+    text-shadow: 9px 9px 0px #0a3d62;
     transition-duration: 500ms;
+    color: #eb2f06;
 }
 
+.margin{
+    margin-bottom: 10vh;
+}
 
+.seeMore{
+    position: absolute;
+    right: 10vw;
+    bottom: 10vh;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 40px 10px 40px;
+    background: linear-gradient(90deg, #fa983a 20%, #eb2f06);
+}
 
 /* ---------------------- four section ---------------------- */
 
 .section-four{
     height: 100vh;
     whidth: 100vw;
-    background-color: black;
+    /* background-color: #0c2461; */
     position: relative;
     z-index: 0;
+    background-color: #14121c;
+    box-shadow: 0px -4px 36px -13px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+/* design the editor */
+
+.editor{
+    height: 80%;
+    width: 50%;
+    margin-left: 10%;
+    border-left: solid 2px #5918df;
+    padding: 20px 20px 20px 40px;
+}
+
+.title{
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #24e33a;
+}
+
+.containerLogo{
+    height: 27vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.designLogo{
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5vw;
+    position: relative;
+}
+.designLogoSocity{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5vw;
+    position: relative;
+}
+
+.logo{
+    height: 100px;
+    filter: opacity(0.5);
+}
+
+.logoName{
+    font-size: 23px;
+    margin-top: 0vh;
+    opacity: 0;
+    transition-duration: 500ms;
+    color: #e3244c;
+}
+
+.logoSocity{
+    filter: opacity(0.5);
+}
+
+.decathlon{
+    width: 300px;
+}
+
+/* test about my self */
+
+.aboutMySelf{
+    height: 80%;
+    width: 35%;
+    padding: 20px 20px 20px 40px;
+}
+
+.presentationText{
+    font-size: 22px;
+    line-height: 35px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-bottom: 5vh;
+}
+
+/* ----------------------  footer ----------------------  */
+
+footer{
+    height: 50vh;
+    width: 100vw;
+    background-color: #1a1527;
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+    justify-content: space-between;
+}
+
+.titlefooter{
+    font-size: 25px;
+    color: #24e33a;
+}
+
+/* left */
+
+.footerLeft{
+    height: 80%;
+    width: 50%;
+    padding: 20px 0px 0px 40px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%
+}
+
+.
+
+svg{
+    width: 22px;
+}
+
+.footerRight{
+    border-left: solid 2px #5918df;
+    height: 80%;
+    width: 50%;
+}
+
+
+
+
