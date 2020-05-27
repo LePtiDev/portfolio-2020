@@ -43,6 +43,17 @@ var logoNameFore = document.getElementById("logoNameFore");
 var logoNameFive = document.getElementById("logoNameFive");
 
 
+// animation contact me$
+var i = 0;
+var background = [
+    "linear-gradient(90deg, #fa983a 20%, #eb2f06)",
+    "linear-gradient(90deg, #54a0ff 20%, #5f27cd)",
+    "linear-gradient(90deg, #10ac84 20%, #48dbfb)",
+    "linear-gradient(90deg, #ff9f43 20%, #f368e0);",
+    "linear-gradient(90deg, #ee5253 20%, #5f27cd);",
+];
+var contactMe = document.getElementById("contactMe");
+
 
 // hover project one
 project.addEventListener('mouseenter', function(){
@@ -262,3 +273,4 @@ logoFive.addEventListener("mouseleave", function(){
     logoNameFive.style.opacity = "0"
     logoNameFive.style.marginTop = "0vh";
 });
+
