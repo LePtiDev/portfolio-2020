@@ -1,0 +1,109 @@
+/* ----------------------  Nav bar ----------------------  */
+
+nav{
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 60px 30px 30px;
+    z-index: 1000000;
+}
+
+.navZone{
+    height: 9vh;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-menu{
+    cursor: pointer;
+    transform: rotate(-135deg);
+    height: 35px;
+    width: 35px;
+    border-top: 3px solid #5918df;
+    border-right: 3px solid #5918df;
+    animation: menuAnimation 1s linear;
+    transition-duration: 500ms;
+}
+
+/* menu */
+
+.menu{
+    position: fixed;
+    top: 0;
+    right: 100vw;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
+    transition-duration: 500ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20000;
+}
+
+.linkMenu{
+    transition-duration: 400ms;
+    margin-bottom: 500px;
+    opacity: 0;
+    font-size: 30px;
+    position: relative;
+}
+
+.linkMenu:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 100%;
+    background: linear-gradient(90deg, #fa983a 20%, #eb2f06);
+    transform-style: linear;
+    transition-property: width;
+    transition-delay: 0s, 0.3s;
+    transition-duration: 0.4s;
+}
+
+.linkMenu:hover:before {
+    width: 100%;
+}
+
+/* ---------------------- Responsive Nav bar ----------------------  */
+
+@media screen and (max-width: 425px) {
+
+    /* nav bar */
+    nav {
+        padding: 10px 10px 0px 10px;
+        /* background-color: #1a1527; */
+    }
+
+    .navZone {
+        justify-content: flex-end;
+        padding-right: 15px;
+    }
+
+    .linkMenu {
+        font-size: 25px;
+    }
+
+    .logo-top {
+        font-size: 23px;
+        line-height: 28px;
+    }
+
+    /* nav menu */
+    .menu {
+        padding: 10vh 0 15vh 0;
+        position: fixed;
+        flex-direction: column;
+        right: 100vw;
+    }
+}

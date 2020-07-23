@@ -1,0 +1,254 @@
+/* --------------- Presentation Section --------------- */
+
+body{
+    background-color: #1a1527;
+}
+
+.presentationSection{
+    width: 100vw;
+}
+
+.titleContainer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 150px 0 50px 0;
+    padding: 0 60px 0 150px;
+}
+
+h1{
+    font-size: 150px;
+    color: #221d35;
+    font-family: D-DIN-Bold;
+    display: inline-block;
+}
+
+.informations{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 150px;
+}
+
+.textResume{
+    font-size: 35px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fa983a), to(#eb2f06));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* contentSection */
+
+.contentSection{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* menu part */
+
+.summary{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentSummary{
+    margin-left: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.summarySection{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.line{
+    height: 2px;
+    width: 30px;
+    background-color: #5918df;
+    margin-top: 10px;
+    margin-left: 95px;
+    transition-duration: 200ms;
+}
+
+/* content part */
+
+.content{
+    height: auto;
+    width: 100%;
+    padding: 50px 160px 50px 160px;
+}
+
+.titleSection{
+    font-size: 80px;
+    color: #eb2f06;
+    margin: 50px 0 50px 50px;
+}
+
+.separation{
+    height: 2px;
+    width: 200px;
+    background-color: #5918df;
+}
+
+.paragrapheSection{
+    font-size: 23px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin: 50px 0 50px 10px;
+}
+
+.imageProject{
+    margin: 50px 0 50px 10px;
+    width: 50%;
+}
+
+.showProject{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5%;
+    padding-left: 10px;
+}
+
+.showProject > img{
+    width: 45%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* title section */
+    h1{
+        font-size: 80px;
+    }
+
+    /* article section */
+
+    .titleSection{
+        font-size: 60px;
+    }
+
+    .paragrapheSection{
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    /* summary */
+
+    .summarySection{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .contentSummary{
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    /* layout content part */
+
+    .content{
+        padding: 50px 50px 50px 50px;
+    }
+
+    .titleSection{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* title section */
+    .titleContainer{
+        margin-top: 110px;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+    h1{
+        font-size: 80px;
+        margin-left: 10px;
+    }
+
+    /* article section */
+
+    .titleSection{
+        font-size: 60px;
+    }
+
+    .paragrapheSection{
+        line-height: 30px;
+        margin: 5px;
+        font-size: 20px;
+    }
+
+    .imageProject{
+        width: calc(100% - 40px);
+    }
+
+    .showProject{
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+        padding-left: 10px;
+    }
+
+    .showProject > img{
+        width: 100%;
+        margin-left: 5px;
+        margin-top: 5%;
+    }
+
+    /* summary */
+
+    .summary{
+        flex-wrap: wrap;
+        margin-left: 40px;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .summarySection{
+        font-size: 25px;
+        margin: 10px 0 10px 0;
+    }
+
+    .contentSummary{
+        margin: 0;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    /* layout content part */
+
+    .content{
+        padding: 50px 20px 50px 20px;
+    }
+
+    .titleSection{
+        font-size: 45px;
+    }
+}
+

@@ -1,0 +1,22 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: D-DIN;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+
+.bold{
+    font-family: D-DIN-Bold;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.in{
+    margin-left: 40px;
+}

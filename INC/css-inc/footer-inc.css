@@ -1,0 +1,121 @@
+/* ----------------------  footer ----------------------  */
+
+footer{
+    height: 50vh;
+    width: 100vw;
+    background-color: #1a1527;
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+    justify-content: space-between;
+}
+
+.titlefooter{
+    font-size: 25px;
+    color: #24e33a;
+}
+
+/* left */
+
+.footerLeft{
+    height: 80%;
+    width: 50%;
+    padding: 20px 0px 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+    font-size: 20px;
+}
+
+.link > svg{
+    width: 22px;
+    margin-right: 10px;
+    fill: #24e33a;
+}
+.svgmargin{
+    margin-top: -5px;
+}
+
+/* right */
+
+.footerRight{
+    border-left: solid 2px #5918df;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMe{
+    font-size: 25px;
+    background: linear-gradient(90deg, #fa983a, #eb2f06, #54a0ff, #5f27cd, #10ac84, #48dbfb,  #ff9f43, #f368e0, #ee5253, #5f27cd);
+    background-size: 2000% 2000%;
+    padding: 20px 50px 20px 50px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 36px -13px rgba(0,0,0,0.75);
+    animation: changeColor 20s infinite linear;
+    transition-duration: 200ms;
+}
+
+@keyframes changeColor {
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+
+/* ---------------------- Responsive footer ----------------------  */
+
+
+@media screen and (max-width: 425px) {
+    footer {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .footerLeft, .footerRight {
+        width: 90vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .contactMe {
+        margin: 10vh 0 10vh 0;
+    }
+
+    .contact {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    .link {
+        margin: 10px 0px 10px 0px;
+    }
+}

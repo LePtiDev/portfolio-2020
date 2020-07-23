@@ -1,22 +1,53 @@
+<?php
+    if($_POST["submit"] == "Send"){
+        echo '    
+            <div id="containerMessage" class="containerMessage">
+                <div class="message">
+                    <p id="message">We received your message</p>
+                </div>
+            </div>';
+    }
+    else {
+        echo '    
+            <div id="containerMessage" class="containerMessage">
+                <div class="messageError">
+                    <p id="message">Mhh, something wrong</p>
+                </div>
+            </div>';
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Quentin guerrier</title>
-        <link rel="stylesheet" href="./CSS/index.css">
+        <title>Horae - Quentin Guerrier</title>
         <link rel="stylesheet" href="./INC/font.css">
+        <link rel="stylesheet" href="./INC/css-inc/reset-inc.css">
+        <link rel="stylesheet" href="./CSS/index.css">
+        <link rel="stylesheet" href="./INC/css-inc/nav.css">
+        <link rel="stylesheet" href="./INC/css-inc/footer-inc.css">
     </head>
 
     <body>
         <!-- Nav bar -->
         <nav>
-            <h2 class="logo-top">Q - G</h2>
-            <div class="button-menu"></div>
+            <a href="index.php"><h2 class="logo-top"><span class="quentin">Quentin</span> <br> Guerrier</h2></a>
+            <div id="navZone" class="navZone"><div id="navButton" class="button-menu"></div></div>
         </nav>
+
+        <div id="menu" class="menu">
+            <a id="linkMenuOne" class="linkMenu" href="./Pages/aboutMe.php">About me</a>
+            <a id="linkMenuTwo" class="linkMenu" href="./Pages/projects.php">Projects</a>
+            <a id="linkMenuThree" class="linkMenu" href="./Pages/lab.php">Horae-lab</a>
+            <a id="linkMenuFore" class="linkMenu" href="./Pages/contact.php">Conctact</a>
+        </div>
+
+        <!-- first section -->
         <section class="section-one">
-            <h1>Quentin Guerrier</h1>
+            <img class="horae-logo" src="./Images/horae-logo.svg" alt="logo horae">
+            <h1>CREATIVE FULL STACK DEVELOPER</h1>
         </section>
         <section class="section-two">
             <h2 class="maxTitle">PROJECTS</h2>
@@ -26,16 +57,17 @@
             <!-- project -->
             <div id="containerOne" class="container-project left">
                 <p id="numberProjectLeft" class="number-project-left bold">01</p>
-                <div id="project" class="project">
-                    <!-- overlay -->
-                    <div id="overlay-project" class="overlay-project">
-                        <h3 id="nameProject" class="name-project">Project name</h3>
-                        <p id="descriptionProject" class="description-project">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, eius ipsam iste perferendis quis repudiandae sit! Ab alias, amet, doloremque dolorum fugiat magni nam, nemo nobis nostrum optio porro quaerat.</p>
-                        <a id="knowMore" class="know-more">More</a>
+                <a href="#">
+                    <div id="project" class="project">
+                        <!-- overlay -->
+                        <div id="overlay-project" class="overlay-project">
+                            <h3 id="nameProject" class="name-project">Project name</h3>
+                            <p id="descriptionProject" class="description-project">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, eius ipsam iste perferendis quis repudiandae sit! Ab alias, amet, doloremque dolorum fugiat magni nam, nemo nobis nostrum optio porro quaerat.</p>
+                            <a id="knowMore" class="know-more">More</a>
+                        </div>
+                        <!-- picture of the project -->
                     </div>
-                    <!-- picture of the project -->
-                    <img class="image-project" src="Images/exemple.jpg">
-                </div>
+                </a>
             </div>
 
             <div id="containerTwo" class="container-project right">
@@ -66,7 +98,7 @@
                 </div>
             </div>
 
-            <a class="seeMore" href="#">More</a>
+            <a class="seeMore" href="./Pages/projects.php">More</a>
         </section>
 
         <section class="section-four">
@@ -102,9 +134,9 @@
             <div class="aboutMySelf">
                 <h3 class="title">About me :</h3>
                 <p class="presentationText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusantium alias aliquid atque beatae consequatur corporis dignissimos doloremque, eaque eum excepturi libero necessitatibus quos reprehenderit sint tempora vitae. Aut, rem?</p>
-                <a class="seeMore" href="#">More</a>
                 <h3 class="title">Mail :</h3>
                 <p class="presentationText">quentin@horae.paris</p>
+                <a class="seeMoreMe" href="Pages/contact.php">More</a>
             </div>
         </section>
         <footer>
@@ -120,7 +152,7 @@
                         <a href="#">in/Quentin.Guerrier</a> <!-- linkedin -->
                     </div>
                     <div class="link">
-                        <svg class="svgmargin"  version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path></svg>Quentin.Guerrier</a> <!-- github -->
+                        <svg class="svgmargin"  version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path></svg>
                         <a href="#">Quentin.Guerrier</a> <!-- github -->
                     </div>
                 </div>
@@ -138,9 +170,10 @@
             </div>
 
             <div class="footerRight">
-                <a href="#" id="contactMe" class="contactMe">Contact me</a>
+                <a href="./Pages/contact.php" id="contactMe" class="contactMe">Contact me</a>
             </div>
         </footer>
-        <script src="./JS/index.js"></script>
+        <script src="./INC/js-inc/menu-inc.js"></script>
+        <script src="JS/index.js"></script>
     </body>
 </html>
